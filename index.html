@@ -8,14 +8,39 @@
     body {
       margin: 0;
       background-color: #000;
+      color: #fff;
+      font-family: sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    blockquote {
+      text-align: center;
+      font-size: 1.4em;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 0 20px 0;
+      quotes: "“" "”" "‘" "’";
+    }
+    blockquote:before {
+      content: open-quote;
+    }
+    blockquote:after {
+      content: close-quote;
+    }
+    cite {
+      display: block;
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #ccc;
     }
     video {
       max-width: 90%;
-      max-height: 90%;
+      max-height: 70%;
       border: 2px solid white;
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
@@ -23,6 +48,11 @@
   </style>
 </head>
 <body>
+  <blockquote>
+    הציבור, שאני קורא לו אפילו הלא-אשכנזי, שונא הכל. הצלחנו להטריף... השנאה הזו היא מה שמאחד את המחנה שלנו
+    <cite>– נתן אשל, מקורבו של בנימין נתניהו</cite>
+  </blockquote>
+
   <video controls autoplay loop playsinline>
     <source src="video.mp4" type="video/mp4">
     Your browser does not support the video tag.
