@@ -34,11 +34,13 @@
       box-sizing: border-box;
       direction: rtl;
     }
-    h1 {
-      font-size: 1.8em;
-      margin-bottom: 10px;
-      color: #fff;
-      text-align: center;
+    .hidden-seo {
+      position: absolute;
+      left: -9999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
     }
     blockquote {
       text-align: center;
@@ -60,14 +62,6 @@
       border-radius: 8px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
     }
-    .hidden-seo {
-      position: absolute;
-      left: -9999px;
-      top: auto;
-      width: 1px;
-      height: 1px;
-      overflow: hidden;
-    }
     .disclaimer {
       font-size: 0.65em;
       color: #777;
@@ -78,7 +72,7 @@
 </head>
 <body>
 
-  <h1>נתן אשל</h1>
+  <h1 class="hidden-seo">נתן אשל</h1>
 
   <blockquote>
     "הציבור, שאני קורא לו אפילו הלא-אשכנזי, שונא הכל. הצלחנו להטריף... השנאה הזו היא מה שמאחד את המחנה שלנו"
